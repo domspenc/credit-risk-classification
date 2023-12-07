@@ -2,25 +2,32 @@
 
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
+The purpose of this analysis is to predict whether or not a loan is considered high risk or healthy.
 
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+Using a supervised machine learning model, specifically a Logistic Regression model, we are able to assess the data to determine the creditworthiness of borrowers.
+
+The data used is is csv file containing 77536 records with information pertaining to the loan, including `loan_size`, `interest_rate`, `borrower_income`, `debt_to_income`, `num_of_accounts`, `derogatory_marks`, `total_debt` and `loan_status`. 
+
+The dependent variable (or y value) was the `loan_status` column; of these records, 75036 had the label `0` (healthy), and 2500 had the label `1` (high risk).
+
+The independent variables (or X values) were the remaining columns listed above.
+
+Using the original data, the `y` variable and `x` variables were defined, then the data was split into training and testing sets using `train_test_split` from the scikit-learn library.
+
+Using the training set, a `LogisticRegression` model was fitted with a random state of 1.
+
+This model was then used to make predictions on the testing set, with results stored in a Pandas dataframe.
+
+Finally, a confusion matrix and classification report was generated, giving valuable insights into the effectiveness of the model and therefore the accuracy of the predictions.
+
 
 ## Results
 
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
-* Machine Learning Model 1:
+* Results:
   * Description of Model 1 Accuracy, Precision, and Recall scores.
 
-
-
-* Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
 
 ## Summary
 
