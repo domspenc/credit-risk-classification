@@ -23,7 +23,7 @@ Finally, a confusion matrix and classification report was generated, giving valu
 
 ## Results
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
+
 
 * Results:
   * Description of Model 1 Accuracy, Precision, and Recall scores.
