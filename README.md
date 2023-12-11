@@ -39,6 +39,14 @@ Finally, a confusion matrix and classification report was generated, giving valu
 
 ![Results](/Credit_Risk/Resources/results.jpg?raw=true "Results")
 
+When looking at the model overall, it is able to predict both the `0` and `1` labels well with a 99% accuracy score, which is excellent. 
+
+However, this changes significantly when analysing each label separately:
+
+- The F1 score for the `0` label is 100%, because the precision score and recall score are also 100%.
+
+- The F1 score for the `1` label is 88%, because the precision score is 87% and the recall score is 89%. This is likely due to the fact there are significantly fewer records for the `1` label (2,500) than the `0` label (75036).
+
 
 ## Summary
 
