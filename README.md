@@ -4,7 +4,7 @@
 
 In this repository, various techniques are used to train and evaluate a model based on loan risk. A dataset of historical lending activity from a peer-to-peer lending services company was used to build a model that can identify the creditworthiness of borrowers.
 
-# Module 12 Report Template
+# Credit Risk Report
 
 ## Overview of the Analysis
 
@@ -37,16 +37,14 @@ Finally, a confusion matrix and classification report was generated, giving valu
 
 ## Results
 
-
-
 * Results:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
+![Results](/Credit_Risk/Resources/results.png?raw=true "Results")
 
 
 ## Summary
 
-Summarise the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+This logistic regression model proves to be an excellent tool to predict the accuracy of whether a loan can be classed as healthy or high-risk for any given borrower.
 
-If you do not recommend any of the models, please justify your reasoning.
+However, given the imbalance of data for the two types of loans, the model may not be appropriate to predict high-risk loans in particular, until significantly greater datapoints are added to the dataset.
+
+Furthermore, this model only returns a black and white, or binary, response; there is not enough detail in the results to determine if a borrower may be classed as 'high-risk', but is placed on the lower end of the 'high-risk' spectrum, for example. 
