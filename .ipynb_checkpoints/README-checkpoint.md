@@ -37,7 +37,6 @@ Finally, a confusion matrix and classification report was generated, giving valu
 
 ## Results
 
-* Results:
 ![Results](/Credit_Risk/Resources/results.jpg?raw=true "Results")
 
 
